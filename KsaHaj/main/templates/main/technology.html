@@ -1,0 +1,196 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} technology{% endblock %}
+
+{% block style%}
+<style>
+
+
+.videoBanner {
+  height: 90vh;
+  align-content: center;
+  padding: 0rem 9rem;
+  
+}
+
+.videoBanner .BGVideo {
+  height: 100%;
+  align-items: center;
+  align-content: center;
+  
+}
+</style>
+{% endblock%}
+
+{% block content %}
+<main class="bg-page">
+    <h1 class="title">الجهود التنقية والرقمية</h1>
+<section class="tech-banner">
+        <div class="techVideo">
+             <video autoplay loop muted playsinline>
+
+            <source src="{% static 'images/tech.mp4'%}" type='video/mp4' />
+
+          </video>
+             </div>
+      </section>
+
+<section class="technology ">
+    <h1>التقنية في خدمة الحجاج</h1>
+    <p>شهد موسم الحج في السنوات الأخيرة تحولًا رقميًا كبيرًا، جعل رحلة ضيوف الرحمن أكثر سهولة وأمانًا وتنظيمًا. تعتمد المملكة على أحدث التقنيات العالمية التي تدعم إدارة الحشود، وتسهل الخدمات، وتوفر بيئة آمنة وصحية للحجاج، ضمن رؤية المملكة 2030 للتحول الوطني.</p>
+</section>
+<div class="container-tech">
+
+    <div class="tech-row">
+    <div class="card-tech">
+        <div class="card-border">
+            <div class="card-prefil">
+                <img src="{%static 'images/droneAi.png'%}" alt="" class="card-img"> 
+            </div>
+        </div>
+        <h3 class="card-name">التقنيات الذكية</h3>
+        <span class="card-prof">لإدارة الحشود</span>
+
+
+        <div class="info-card">
+            <div class="info-icon"><span class="material-symbols-outlined">info</span></div>
+            <div class="info-border">
+            <div class="info-prefil">
+                <img src="{%static 'images/droneAi.png'%}" alt="" class="card-img">
+            </div>
+        </div>
+        <div class="info-data">
+            <h3 class="card-name">التقنيات الذكية</h3>
+            <span class="card-prof">إنذار مبكر عند ارتفاع كثافة الحجاج<br>وكاميرات مزودة بالذكاء الاصطناعي تساعد في إدارة الحشود</span>
+        </div>
+    </div>
+    </div>
+     <div class="card-tech">
+        <div class="card-border">
+            <div class="card-prefil">
+                <img src="{%static 'images/smartphone.png'%}" alt="" class="card-img"> 
+            </div>
+        </div>
+        <h3 class="card-name">الخدمات الرقمية</h3>
+        <span class="card-prof">تطبيقات للحجاج</span>
+
+
+        <div class="info-card">
+            <div class="info-icon"><span class="material-symbols-outlined">info</span></div>
+            <div class="info-border">
+            <div class="info-prefil">
+                <img src="{%static 'images/smartphone.png'%}" alt="" class="card-img">
+            </div>
+        </div>
+        <div class="info-data">
+            <h3 class="card-name">الخدمات الرقمية</h3>
+            <span class="card-prof">تطبيق توكلنا خدمات ونسك<br>بطاقة الحج الذكية تحتوي على بيانات الحاج ككل</span>
+        </div>
+    </div>
+    </div>
+    <div class="card-tech">
+        <div class="card-border">
+            <div class="card-prefil">
+                <img src="{%static 'images/healthcare.png'%}" alt="" class="card-img"> 
+            </div>
+        </div>
+        <h3 class="card-name">التقنيات الصحية</h3>
+        <span class="card-prof">لخدمة الحجاج</span>
+
+
+        <div class="info-card">
+            <div class="info-icon"><span class="material-symbols-outlined">info</span></div>
+            <div class="info-border">
+            <div class="info-prefil">
+                <img src="{%static 'images/healthcare.png'%}" alt="" class="card-img">
+            </div>
+        </div>
+        <div class="info-data">
+            <h3 class="card-name">التقنيات الصحية</h3>
+            <span class="card-prof">أجهزة الفحص الحراري والكشف عن الحالات الصحية<br>أنظمة مراقبة صحية مرتبطة بالمستشفيات والمراكز</span>
+        </div>
+    </div>
+
+
+    </div>
+</div>
+    <div class="tech-row">
+    <div class="card-tech">
+        <div class="card-border">
+            <div class="card-prefil">
+                <img src="{%static 'images/5G.png'%}" alt="" class="card-img"> 
+            </div>
+        </div>
+        <h3 class="card-name">البينة التحتية الرقمية</h3>
+        <span class="card-prof"> تغطية شاملة</span>
+
+
+        <div class="info-card">
+            <div class="info-icon"><span class="material-symbols-outlined">info</span></div>
+            <div class="info-border">
+            <div class="info-prefil">
+                <img src="{%static 'images/5G.png'%}" alt="" class="card-img">
+            </div>
+        </div>
+        <div class="info-data">
+            <h3 class="card-name">البنية التحتية الرقمية</h3>
+            <span class="card-prof">مراكز تحكم رقمية<br>تغطيات شاملة للإنترنت عالي السرعة</span>
+        </div>
+    </div>
+    </div>
+
+    <div class="card-tech">
+        <div class="card-border">
+            <div class="card-prefil">
+                <img src="{%static 'images/analyse.png'%}" alt="" class="card-img"> 
+            </div>
+        </div>
+        <h3 class="card-name">تحليل البيانات</h3>
+        <span class="card-prof">لخدمة الحجاج</span>
+
+
+        <div class="info-card">
+            <div class="info-icon"><span class="material-symbols-outlined">info</span></div>
+            <div class="info-border">
+            <div class="info-prefil">
+                <img src="{%static 'images/analyse.png'%}" alt="" class="card-img">
+            </div>
+        </div>
+        <div class="info-data">
+            <h3 class="card-name">تحليل البيانات</h3>
+            <span class="card-prof">دعم الجهات الأمنية والصحية بتقارير لتدخل السريع<br>توقع الحالات الطارئة<br>تحليل الحركة والتفويج لتجنب الازدحام</span>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="card-tech">
+        <div class="card-border">
+            <div class="card-prefil">
+                <img src="{%static 'images/kaaba.png'%}" alt="" class="card-img"> 
+            </div>
+        </div>
+        <h3 class="card-name">النقل الذكي</h3>
+        <span class="card-prof">لخدمة الحجاج</span>
+
+
+        <div class="info-card">
+            <div class="info-icon"><span class="material-symbols-outlined">info</span></div>
+            <div class="info-border">
+            <div class="info-prefil">
+                <img src="{%static 'images/kaaba.png'%}" alt="" class="card-img">
+            </div>
+        </div>
+        <div class="info-data">
+            <h3 class="card-name">النقل الذكي</h3>
+            <span class="card-prof">نظام تتبع المركبات لضمان سلامة الرحلات ومعرفة موقع الحافلات طوال الوقت</span>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+   
+</div>
+</main>
+{% endblock %}

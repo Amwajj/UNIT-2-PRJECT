@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدمات الحجاج</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      direction: rtl;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #274f44;
+    }
+
+    h1 {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      font-weight: bold;
+    }
+
+    /* بانر كبير */
+    .banner-section {
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+      border-radius: 20px;
+      position: relative;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      margin-bottom: 50px;
+    }
+
+    .banner-section button {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      background-color: #436159;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .banner-section button:hover {
+      background-color: #274f44;
+    }
+
+    /* النقل والمواصلات */
+    .transport {
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 50px;
+    }
+
+    .transport ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+      line-height: 2;
+    }
+
+    .transport li::before {
+      content: "✔️";
+      margin-left: 10px;
+      color: #436159;
+    }
+
+    /* Accordion */
+    .accordion-button {
+      background-color: #436159;
+      color: white;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #274f44;
+      color: white;
+    }
+
+    /* Carousel */
+    .carousel-item img {
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    /* المرافق */
+    .facilities {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+    .facilities div {
+      background-color: white;
+      flex: 1 1 200px;
+      max-width: 250px;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .facilities div:hover {
+      transform: translateY(-5px);
+    }
+    .facilities i {
+      font-size: 50px;
+      color: #436159;
+      margin-bottom: 10px;
+    }
+
+    /* بانر الصحة */
+    .medical {
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      margin-bottom: 50px;
+    }
+
+    /* الأمن والسلامة */
+    .security {
+      background-color: #dde3d7;
+      padding: 50px 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 50px;
+    }
+
+    /* الترفيه */
+    .recreation {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-bottom: 50px;
+    }
+    .recreation div {
+      background-color: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .recreation div:hover {
+      transform: translateY(-5px);
+    }
+    .recreation i {
+      font-size: 45px;
+      color: #436159;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 576px) {
+      .banner-section, .medical { padding: 80px 20px; }
+      .carousel-item img { height: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>خدمات الحجاج</h1>
+
+  <!-- السقاية والرفادة -->
+  <section class="banner-section" style="background-image: url('https://images.unsplash.com/photo-1570612861542-284f4c12e75f');">
+    <h2>السقاية والرفادة</h2>
+    <p>توفير مياه زمزم والوجبات لضيوف الرحمن في جميع المواقع.</p>
+    <button>المزيد</button>
+  </section>
+
+  <!-- النقل والمواصلات -->
+  <section class="transport container">
+    <h2>النقل والمواصلات</h2>
+    <ul>
+      <li>الحافلات: نقل الحجاج بين المواقع</li>
+      <li>قطار المشاعر: سريع ومريح</li>
+      <li>العربات: لتسهيل التنقل داخل المشاعر</li>
+    </ul>
+  </section>
+
+  <!-- الترجمة والإرشاد -->
+  <section class="container my-5">
+    <h2>الترجمة وخدمات الإرشاد</h2>
+    <div class="accordion" id="translationAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            اللغة الإنجليزية
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#translationAccordion">
+          <div class="accordion-body">مترجمون لمساعدة الحجاج باللغة الإنجليزية.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            اللغة الفرنسية
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#translationAccordion">
+          <div class="accordion-body">مترجمون لمساعدة الحجاج باللغة الفرنسية.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            اللغة الإسبانية
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#translationAccordion">
+          <div class="accordion-body">مترجمون لمساعدة الحجاج باللغة الإسبانية.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الخدمات التطوعية -->
+  <section class="container my-5">
+    <h2>الخدمات التطوعية</h2>
+    <div id="volunteerCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/static/images/health.jpg" class="d-block w-100" alt="متطوع1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1596495577886-d920f3f5f0aa" class="d-block w-100" alt="متطوع2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" class="d-block w-100" alt="متطوع3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#volunteerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#volunteerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- المرافق -->
+  <section class="facilities container">
+    <div>
+      <i class="fas fa-restroom"></i>
+      <p>دورات المياه</p>
+    </div>
+    <div>
+      <i class="fas fa-couch"></i>
+      <p>الخيم المكيفة</p>
+    </div>
+    <div>
+      <i class="fas fa-wheelchair"></i>
+      <p>مسارات ذوي الإعاقة</p>
+    </div>
+  </section>
+
+  <!-- الصحة والخدمات الطبية -->
+  <section class="medical" style="background-image: url('https://images.unsplash.com/photo-1588776814546-82c4b6e73f03');">
+    <h2>الصحة والخدمات الطبية</h2>
+    <p>مراكز طبية متنقلة، سيارات إسعاف، وأطقم طبية متوفرة على مدار الساعة.</p>
+  </section>
+
+  <!-- الأمن والسلامة -->
+  <section class="security container">
+    <h2>الأمن والسلامة</h2>
+    <p>انتشار فرق الأمن، كاميرات مراقبة، وإرشادات السلامة لضمان حماية الحجاج أثناء المناسك.</p>
+  </section>
+
+  <!-- الترفيه والمرافق الإضافية -->
+  <section class="recreation container">
+    <div>
+      <i class="fas fa-tree"></i>
+      <p>مساحات خضراء</p>
+    </div>
+    <div>
+      <i class="fas fa-chair"></i>
+      <p>مناطق استراحة</p>
+    </div>
+    <div>
+      <i class="fas fa-wine-glass-alt"></i>
+      <p>خدمات إضافية للراحة</p>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

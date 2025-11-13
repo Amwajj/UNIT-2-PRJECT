@@ -1,63 +1,68 @@
 # UNIT-2-PROJECT
 
-## Using Django create a project about our beloved kingdom of your choosing. Examples :
-- Tourism in Saudi Arabia.
-- Culture & Heritage in Saudi Arabia.
-- Manufacturing & Industries in Saudi Arabia.
-- Agriculture in Saudi Arabia.
-- Science in Saudi Arabia.
-- History of Saudi Arabia.
-- etc.....
 
 
-# Minumum Requirements
-- Use Django.
-- Use templates & templates inheritance.
-- Use dynamic urls where applicable.
-- Use static files where applicable.
-- homepage + other 6 pages.
-- Coherent, uniform design .
-- Implement dark and light mode.
-- You can use a CSS library to style your website (such as Bootstrap or equivalent)
-- You can use a cdn or a cloud storage to host large files such as large videos (example: Goolge Firebase Cloud Storage: https://firebase.google.com/docs/storage)
+# 🕋 **حفاوة: جهود المملكة في خدمة الحجاج**
 
+## **نبذة عن المشروع**
 
+يهدف هذا المشروع إلى تسليط الضوء على الجهود العظيمة التي تبذلها المملكة العربية السعودية في خدمة ضيوف الرحمن خلال موسم الحج، من خلال موقع معلوماتي يوضح الخدمات المقدمة في مجالات متعددة مثل الصحة، الأمن، التنظيم، التقنية، وتوسعة الحرم المكي الشريف.
 
-# Example : TOURISM-PROJECT
+---
 
-## Using Django create a website for Tourism in Saudi Arabia . The project name is : Tourister
+## **محتوى الموقع**
 
-### Your website has the following pages :
+يتكوّن الموقع من **7 صفحات رئيسية**:
 
-#### "" : home page , with the following content:
-- Title of the page , with a catchy phrase about tourism in Saudi Arabia
-- A single wide image covering the page.
-- A paragraph about the tourism in Saudi Arabia in General.
-- A list of cities pages with links to them (the pages are listed down below).
+1. **الصفحة الرئيسية:**
+   مقدمة تعريفية عن دور المملكة في خدمة الحجاج واستقبالهم سنويًا بكل رعاية واهتمام.
 
+2. **الصحة:**
+   تسلط الضوء على الخدمات الصحية والوقائية المقدمة للحجاج لضمان حج آمن وصحي.
 
-#### "city/Riyadh/"
-- Title of city with a catchy phrase
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
+3. **توسعة الحرم:**
+   تستعرض جهود ملوك المملكة في توسعة الحرم المكي وتطوير المشاعر المقدسة.
 
-#### "city/Abha/"
-- Title of city with a catchy phrase.
-- Top Attractions in the city.
-- A brief about the city.
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
+4. **الأمن:**
+   توضح دور قوات أمن الحج والجهات المشاركة في حفظ الأمن وتنظيم الحشود.
 
-#### "city/Mekkah/"
-- Title of city with a catchy phrase.
-- Top Attractions in the city.
-- A brief about the city.
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
+5. **التنظيم:**
+   تتناول خطط التفويج، إدارة الحشود، وتنظيم تنقل الحجاج بين المشاعر المقدسة.
 
-#### "city/AlUla/"
-- Title of city with a catchy phrase.
-- Top Attractions in the city.
-- A brief about the city.
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
+6. **التقنية:**
+   تبرز التقنيات الحديثة والذكاء الاصطناعي والروبوتات المستخدمة لخدمة الحجاج.
+
+7. **الخدمات  :**
+   تتحدث عن الجانب الإنساني والخدمات الحكومية والتطوعية المقدمة للحجاج.
+
+---
+
+## **أدوات التصميم والتطوير**
+
+* **HTML**
+* **CSS**
+* **Django**
+* **Bootstrap** و **Tailwind CSS** 
+
+---
+
+## **أهداف المشروع**
+
+* إبراز جهود المملكة في خدمة الإسلام والمسلمين.
+* عرض التطور التقني والتنظيمي في موسم الحج.
+* تقديم معلومات مفيدة بطريقة بسيطة وجذابة.
+
+---
+
+## **تصميم الواجهة**
+
+تم تصميم الموقع بأسلوب بسيط وجذاب مع استخدام ألوان مستوحاة من روح الحج:
+
+* الأبيض: رمز النقاء والطهارة.
+* الذهبي: رمز الفخامة والمقدسات.
+* الأخضر: لون شعار المملكة.
+* الأسود: يرمز إلى الكعبة المشرفة.
+
+---
+
+أمواج الزهراني

@@ -1,0 +1,190 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} health{% endblock %}
+
+{% block style%}
+<style>
+  .wrapper {
+    background-image: none;
+
+  }
+
+  body.dark .wrapper {
+    background-image: none;
+
+  }
+
+  .header-home {
+    height: 35vw;
+  }
+
+  .statistics {
+    background: none;
+    border: none;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    opacity: 1;
+  }
+</style>
+{% endblock%}
+
+{% block content %}
+<main class="bg-page">
+  <h1 class="title">الجهود الصحية</h1>
+<section class="header-home">
+
+  <div class="sec">
+    <div class="sec-container">
+      <div class="sec-col">
+
+        <div class="sec-container statis">
+          <div class="statistics text-center">
+            <img src="{%static 'images/consultation.png'%}">
+          </div>
+          <div class="text-statis text-center">
+            <h3>46.834</h3>
+            <p>مستفيد من خدمات المراكز الصحية</p>
+          </div>
+        </div>
+        <div class="sec-container statis">
+          <div class="statistics text-center">
+            <img src="{%static 'images/online.png'%}">
+          </div>
+          <div class="text-statis text-center">
+            <h3>27.258</h3>
+            <p>استشارة طبية قدمت عبر 937</p>
+          </div>
+        </div>
+
+        <div class="sec-container statis">
+          <div class="statistics text-center">
+            <img src="{%static 'images/patient.png'%}">
+          </div>
+          <div class="text-statis text-center">
+            <h3>3.240</h3>
+            <p>حالة تنويم في المستفيات</p>
+          </div>
+        </div>
+      </div>
+      <div class="sec-col">
+
+
+        <div class="sec-container statis">
+          <div class="statistics text-center">
+            <img src="{%static 'images/surgery.png'%}">
+          </div>
+          <div class="text-statis text-center">
+            <h3>104</h3>
+            <p>عمليات قسطرة قلبية</p>
+          </div>
+        </div>
+
+
+        <div class="sec-container statis">
+          <div class="statistics text-center">
+            <img src="{%static 'images/man.png'%}">
+          </div>
+          <div class="text-statis text-center">
+            <h3>05</h3>
+            <p>حالات إجهاد حراري</p>
+          </div>
+        </div>
+
+        <div class="sec-container statis">
+          <div class="statistics text-center">
+            <img src="{%static 'images/volunteer.png'%}">
+          </div>
+          <div class="text-statis text-center">
+            <h3>+4631</h3>
+            <p>متطوع\ـة</p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+</section>
+
+<section class="health-cards">
+  <div class="health-items">
+    <div class="health-item">
+      <div class="images arabic-text">
+        <img src="{%static 'images/hospital.png'%}">
+      </div>
+      <div class="health-content arabic-text ">
+        <h3>مراكز طبية ثابتة ومتنقلة</h3>
+        <p>تجهيز مستشفيات ميدانية ومراكز طبية ثابتة ومتنقلة، موزعة في مواقع استراتيجية داخل المشاعر المقدسة ومحيطها،
+          لضمان سهولة الوصول إليها في أي وقت. </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="health-items">
+    <div class="health-item second">
+      <div class="images arabic-text">
+        <img src="{%static 'images/helicopter.png'%}">
+      </div>
+      <div class="health-content arabic-text ">
+        <h3>الإسعاف الجوي</h3>
+        <p>11 طائرة مخصصة لنقل الحالات الصحية الحرجة من الحرم المكي والمشاعر المقدسة، عبر 13 مهبطًا إستراتيجيًا موزعة
+          بعناية لضمان سرعة الاستجابة الطبية في جميع المواقع.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="health-items">
+    <div class="health-item third">
+      <div class="images arabic-text">
+        <img src="{%static 'images/medical-staff.png'%}">
+      </div>
+      <div class="health-content arabic-text ">
+        <h3>كوادر طبية</h3>
+        <p>يشرف على هذه الخدمة أكثر من (120) كادرًا مؤهلًا من أطباء وفنيي طب طوارئ، يعملون على مدار الساعة لتقديم
+          الرعاية العاجلة للحجاج.</p>
+      </div>
+    </div>
+
+  </div>
+
+
+</section>
+<section class="imgs-health arabic-text">
+  التطوع الصحي
+  <div class="imgs-container text-center">
+    <div class="row">
+      <div class="col">
+        <img src="{%static 'images/h-img3.png'%}">
+      </div>
+      <div class="col">
+        <img src="{%static 'images/h-img2.jpg'%}">
+      </div>
+      <div class="col">
+        <img src="{%static 'images/h-img1.jpg'%}">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img src="{%static 'images/h-img2.jpg'%}">
+      </div>
+      <div class="col">
+
+        <img src="{%static 'images/h-img.jpg'%}">
+      </div>
+    </div>
+  </div>
+
+
+</section>
+</main>
+{% endblock %}

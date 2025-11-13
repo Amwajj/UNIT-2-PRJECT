@@ -1,0 +1,117 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}security{% endblock %}
+{% block style%}
+<style>
+  .wrapper {
+    background-image: none;
+
+  }
+
+  body.dark .wrapper {
+    background-image: none;
+
+  }
+
+</style>
+{% endblock%}
+
+
+{% block content %}
+<main class="bg-page">
+    <h1 class="title">الجهود الأمنية</h1>
+    <div class="sec">
+    <div class="sec-col">        
+        <div class="sec-container arabic-text">
+            <p class="title-stat">رصد الحملات المخالفة ومنع الدخول الغير نظامي <br> للحفاظ على سلامة الحجاج </p>
+            <div class="sec-col mt-2">
+               
+                <div class="statistics text-center arabic-text">
+                <div class="text-center">
+                    <p><span>ضبط 63</span> حملة وهمية على مستوى المملكة</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="sec-col pt-3">
+                <div class="statistics text-center">
+                <div class="text-center">
+                    <p><span>إعادة 100 ألف</span> مقيم لم يحصلوا على التصاريح اللازمة لدخول مكة المكرمة </p>
+                </div>
+                </div>
+            </div>
+
+             <div class="sec-col pt-3">
+                <div class="statistics text-center">
+                <div class="text-center">
+                    <p><span>ضبط 8</span> مواطنين ومقيمين قاموا بنقل حجاج غير نظاميين</p>
+                </div>
+                </div>
+            </div>
+
+           
+            </div>
+     <div class=" sec-container arabic-text">
+           <h3>قوات أمن الحج جاهزة لمنع ما يعكر على ضيوف الرحمن</h3>
+            <div class="sec-col statis">
+                <iframe width="690" height="328" style="border-radius: 10px;" src="https://www.youtube.com/embed/V4I4xYRaXYo?si=eryLx4DMGlWA8qJi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>           
+            </div>
+
+        </div>
+</div>
+<h1 class="center-content arabic-text">من القوات المشاركة في الحج</h1>
+    <div class="sec">
+    <div class="sec-container">
+        <div class="sec-col">
+            <div class="sec-cards">
+                <div class="sec-img">
+                    <img src="{%static 'images/sec-ineternal.jpg'%}">
+                </div>
+                <div class="sec-contant arabic-text pt-2">
+                    <h3>2</h3>
+                    <p>الأمن العام، قوات الطوارئ الخاصة، المرور، أمن الطرق، المهمات الخاصة </p>
+                </div>
+            </div>
+            
+            <div class="sec-cards">
+                <div class="sec-img">
+                    <img src="{%static 'images/sec-country.jpg'%}">
+                </div>
+                <div class="sec-contant arabic-text pt-2">
+                    <h3>1</h3>
+                    <p>المباحث العامة، قوات الطوارئ الخاصة،فريق مكافحة الإرهاب</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec-col">
+            <div class="sec-cards">
+                <div class="sec-contant arabic-text pt-2">
+                    <h3>4</h3>
+                    <p>وحدات الأمن والحماية، الدعم الطبي واللوجيستي</p>
+                </div>
+                <div class="sec-img">
+                    <img src="{%static 'images/sec-n.jpg'%}">
+                </div>
+
+            </div>
+
+            <div class="sec-cards">
+                <div class="sec-contant arabic-text pt-2">
+                    <h3>3</h3>
+                    <p>القوات البرية، الجوية، الخدمات الطبية للقوات المسلحة</p>
+                </div>
+                <div class="sec-img">
+                    <img src="{%static 'images/sec-defense.jpeg'%}">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+</main>
+{% endblock %}

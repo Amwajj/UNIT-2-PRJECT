@@ -1,0 +1,136 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} Kings{% endblock %}
+
+{% block style%}
+<style>
+    .wrapper {
+        background-image: none;
+        background: #274f44;
+        height: 110vh;
+    }
+
+    body.dark .wrapper {
+        background-image: none;
+        background: #274f44;
+        height: 110vh;
+    }
+</style>
+{% endblock%}
+
+{% block content %}
+<main class="bg-page">
+    <section class="header-gallery">
+        <h1>مراحل توسعة الحرم المكي</h1>
+        <div class="gallery arabic-text">
+            <div class="img-box">
+                <h3 class="arabic-text">1887</h3>
+            </div>
+            <div class="img-box">
+                <h3 class="arabic-text">1910</h3>
+            </div>
+            <div class="img-box">
+                <h3 class="arabic-text">1937</h3>
+            </div>
+            <div class="img-box">
+                <h3 class="arabic-text">1979</h3>
+            </div>
+            <div class="img-box">
+                <h3 class="arabic-text">1988</h3>
+            </div>
+            <div class="img-box">
+                <h3 class="arabic-text">2005</h3>
+            </div>
+            <div class="img-box">
+                <h3 class="arabic-text">2015</h3>
+            </div>
+            <div class="img-box arabic-text">
+                <h3>2025</h3>
+            </div>
+        </div>
+    </section>
+    <section class="bg-timeline">
+        <div class="timeline">
+            <div class="time-container">
+                <img src="{%static 'images/abdulaziz.jpg'%}">
+                <div class="text-timeline arabic-text">
+                    <h1>1375هـ</h1>
+                    <div>
+                        <h3>توسعة الملك عبد العزيز ال سعود</h3>
+                        <p>أول توسعة في العهد السعودي، شملت إزالة الأبنية القديمة حول المسجد، وبناء أروقة جديدة، وساحات
+                            للصلاة.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="time-container">
+                <div class="text-timeline arabic-text">
+                    <h1>1377هـ</h1>
+                    <div>
+                        <h3>توسعة الملك سعود بن عبدالعزيز </h3>
+                        <p>أكمل بناء الأروقة والقباب والمآذن، وأضاف الإنارة الحديثة والمراوح.</p>
+                    </div>
+                </div>
+                <img src="{%static 'images/saud.jpg'%}">
+            </div>
+            <div class="time-container ">
+                <img src="{%static 'images/faisal.jpg'%}">
+                <div class="text-timeline arabic-text">
+                    <h1>1389هـ</h1>
+                    <div>
+                        <h3>توسعة الملك فيصل بن عبدالعزيز</h3>
+                        <p>توسعة المسعى بين الصفا والمروة، وتحديث نظام الإنارة والتبريد.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="time-container">
+                <div class="text-timeline arabic-text">
+                    <h1>1398هـ</h1>
+                    <div>
+                        <h3>توسعة الملك خالد بن عبدالعزيز</h3>
+                        <p>توسعة المسعى والمطاف، وتشييد مآذن جديدة.</p>
+                    </div>
+                </div>
+                <img src="{%static 'images/khaled.jpg'%}">
+            </div>
+
+            <div class="time-container ">
+                <img src="{%static 'images/fahad.jpg'%}">
+                <div class="text-timeline arabic-text">
+                    <h1>1409هـ</h1>
+                    <div>
+                        <h3>توسعة الملك فهد بن عبدالعزيز</h3>
+                        <p>توسعة كبيرة شملت الجهة الغربية، بناء مداخل فخمة، تكييف متكامل، أنظمة صوت وإضاءة متطورة.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="time-container">
+                <div class="text-timeline arabic-text">
+                    <h1>1431هـ</h1>
+                    <div>
+                        <h3>توسعة الملك عبدالله بن عبدالعزيز</h3>
+                        <p>أكبر توسعة في تاريخ الحرم حتى ذلك الوقت، أضافت أكثر من 400 ألف م²، شملت الساحات والجسور
+                            وأنظمة
+                            النقل.</p>
+                    </div>
+                </div>
+                <img src="{%static 'images/abdulaalh.jpg'%}">
+            </div>
+            <div class="time-container">
+                <img src="{%static 'images/salman.jpg'%}">
+                <div class="text-timeline arabic-text">
+                    <h1>1436هـ</h1>
+                    <div>
+                        <h3>توسعة خادم الحرمين الشريفين الملك سلمان حتى اليوم</h3>
+                        <p>استكمال أعمال الملك عبدالله، تطوير البوابات، المسعى، المرافق الصحية، وأنظمة التهوية الذكية.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

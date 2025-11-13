@@ -1,0 +1,122 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} Hajj{% endblock %}
+
+{% block style%}
+<style>
+.wrapper{
+    background-image: none;
+    
+}
+body.dark .wrapper{
+  background-image: none;
+
+    
+}
+</style>
+{% endblock%}
+
+{% block content %}
+<main class="bg-page">
+
+      <section class="videoBanner">
+        <div class="BGVideo">
+             <video autoplay loop muted playsinline>
+
+            <source src="{% static 'images/hero.mp4'%}" type='video/mp4' />
+
+          </video>
+             </div>
+        <div class="contentBanner arabic-text">
+             <div>
+                 <h1 class="mainTitle ">فـي رحـاب الحفـاوة</h1>
+                    <p class="arabic-text">كـل خطـوة تخطـى لهـدف اسمـى <br>الحج في سكـينة وسـلام وإطمـئنـان..</p>
+                  </div>
+              </div>
+      </section>
+
+  <section class="center-content">
+  <div class="card-kings arabic-text  row g-0 position-relative">
+    <div class="col-md-4  mb-md-0 mb-md-0 p-xxl-5 p-md-4 ">
+      <img src="{%static 'images/kings.jpg'%}" class="kings " alt="...">
+    </div>
+    <div class="card-kings col-md-6 pt-5 pr-5 ps-md-0 ">
+      <h5 class="mt-0 ">ملوك المملكة العربية السعودية</h5>
+      <p>منذ عهد المؤسس الملك عبدالعزيز آل سعود – رحمه الله – جعلت المملكة خدمة الحجاج والعناية بضيوف الرحمن أولوية
+        كبرى، فعملت على تأمين الطرق وتطوير الخدمات في المشاعر المقدسة. وتواصل هذا النهج في عهد الملوك من بعده حتى بلغ
+        ذروته في عهد الملك سلمان بن عبدالعزيز وسمو ولي العهد الأمير محمد بن سلمان.</p>
+      <a href="{%url 'main:kings_view'%}" class="stretched-link"></a>
+    </div>
+  </div>
+
+
+  <div class="card-fileds arabic-text content pt-5">
+
+    <h3 class="mt-0 ">خدمة ضيوف الرحمن شرفٌ وواجب تؤديه المملكة بكل فخر واقتدار</h3>
+    <p>تبذل المملكة جهودًا شاملة في التنظيم، والصحة، والأمن، والتقنية لضمان راحة الحجاج وسلامتهم.</p>
+  </div>
+
+    <div class="fileds arabic-text mb-md-0 p-md-4  row row-cols-1 row-cols-md-4  g-4">
+      <a href="{%url 'main:health_view'%}">
+        <div class="filed-card">
+          <div class="Img-bx" style="--img:url(/static/images/health.jpg)"></div>
+          <div class="content-filed">
+            <h2>الجهود الصحية</h2>
+            <p>توفر المملكة منظومة متكاملة من الخدمات الصحية والوقائية لضمان حج آمن وصحي.</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="{%url 'main:security_view'%}">
+        <div class="filed-card">
+          <div class="Img-bx" style="--img:url(/static/images/security.jpg)"></div>
+          <div class="content-filed">
+            <h2>الجهود الأمنية</h2>
+            <p>توفير كامل الطاقات الآلية والبشرية أمام ضيوف الرحمن ليتمكنوا من أداء فريضة الحج في أجواء إيمانية كاملة محفوفة بالأمن والأمان والرحة والاستقرار والسلامة.</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="{%url 'main:technology_view'%}">
+        <div class="filed-card">
+          <div class="Img-bx" style="--img:url(/static/images/it.jpg)"></div>
+          <div class="content-filed">
+            <h2>الجهود التقنية والرقمية</h2>
+            <p>تسهيل الإجراءات، وتحسين تجربة الزائر، بدءًا من لحظة الوصول وحتى المغادرة، بما يشمل الإرشاد الذكي، وإدارة الحشود، وتقديم المعلومات الفورية بعدة لغات.</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="{%url 'main:organization_view'%}">
+        <div class="filed-card">
+          <div class="Img-bx" style="--img:url(/static/images/campaigns.jpg)"></div>
+          <div class="content-filed">
+            <h2>الجهود التنظيمية</h2>
+            <p>تُقدم السعودية للعالم نموذجاً متكاملاً في التنظيم والإدارة</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="{%url 'main:services_view'%}">
+        <div class="filed-card">
+          <div class="Img-bx" style="--img:url(/static/images/health.jpg)"></div>
+          <div class="content-filed">
+            <h2>الخدمات الحجاج</h2>
+            <p>أهم الخدمات التي تقدمها المملكة لزوار لضيوف الرحمن خلال الحج</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="supporters">
+      <h2>شركـاء الحفـاوة</h2>
+      <img src="{%static '/images/sgya.jpeg'%}" alt="">
+    </div>
+</section>
+
+
+
+
+</main>
+{% endblock %}

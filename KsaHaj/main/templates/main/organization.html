@@ -1,0 +1,101 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} Organization{% endblock %}
+
+
+{% block style%}
+<style>
+    .wrapper {
+        background-image: url("/static/images/h-img3.png");
+        background: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    body.dark .wrapper {
+        background-image: url("/static/images/h-img3.png");
+    }
+    .header-gallery{
+        height: 100vh;
+    }
+    .gallery {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tech-row {
+        padding: .2rem 0.5rem 0 .5rem;
+        gap: 0.2rem;
+    }
+
+    .header-gallery {
+        background: var(--section-bg);
+    }
+</style>
+{% endblock%}
+{% block content %}
+<main class="bg-page">
+    <h1 class="title ">الجهود التنظيمية</h1>
+    <div class="org-cards">
+        <div class="bg-card-org">
+            <div class="org-card ">
+                <img src="{%static '/images/campaigns.jpg'%}" class="org-img" alt="">
+                <div class="card-paragraph arabic-text">
+                    <h1>التنظيم في الحج</h1>
+                    <p>تتميز المملكة العربية السعودية بنظام دقيق ومتطور لإدارة موسم الحج، حيث تعمل مختلف الجهات الحكومية
+                        في منظومة موحدة لضمان انسيابية الحركة وسهولة أداء المناسك. يبدأ التنظيم من استقبال الحجاج في
+                        المنافذ البرية والبحرية والجوية، مرورًا بعملية التفويج للمشاعر المقدسة وفق جداول زمنية محددة،
+                        مما يمنع الازدحام ويحقق أعلى معايير السلامة.</p>
+                </div>
+                <img src="{%static '/images/campaigns.jpg'%}" class="org-img-right" alt="">
+            </div>
+        </div>
+
+        <section class="header-gallery title-card-org">
+            <h1>مراحل توسعة الحرم المكي</h1>
+            <div class="gallery arabic-text">
+                <div class="tech-row">
+                    <div class="paragraph-box">
+                        <h3 class="arabic-text">1. التخطيط والتنظيم المسبق</h3>
+                        <p>تبدأ جهود المملكة التنظيمية في الحج قبل أشهر من موسم الحج، حيث تعمل الجهات الحكومية والأمنية
+                            والخدمية على إعداد خطط متكاملة تشمل تنظيم الحشود، وجدولة تفويج الحجاج، وتوزيع الخدمات في
+                            المشاعر المقدسة</p>
+                    </div>
+                    <div class="paragraph-box">
+                        <h3 class="arabic-text">2. إدارة الحشود وتنظيم الحركة</h3>
+                        <p>يعد تنظيم حركة الحشود من أهم الجهود التنظيمية، حيث يتم استخدام أنظمة ذكية لمراقبة كثافة
+                            الحجاج عبر الكاميرات وتحليل البيانات لحظيًا.
+                            كما يتم تنظيم تفويج الحجاج أثناء تنقلهم بين المشاعر (منى، عرفات، مزدلفة) عبر جداول زمنية
+                            دقيقة لتفادي الازدحام، مع تخصيص مسارات خاصة لكبار السن وذوي الإعاقة.
+                            وتسهم قوات الأمن العام والمرور والحج في توجيه الحجاج وتنظيم السير لضمان السلامة والانسيابية.
+                        </p>
+                    </div>
+                </div>
+                <div class="tech-row">
+                    <div class="paragraph-box">
+                        <h3 class="arabic-text">3. التنسيق بين الجهات الحكومية</h3>
+                        <p>تتكاتف أكثر من 40 جهة حكومية في خدمة الحجاج ضمن منظومة موحدة يقودها مركز القيادة والسيطرة
+                            للحج.
+                            يشمل التنسيق تبادل المعلومات الفوري، وتكامل الأنظمة الإلكترونية لتسهيل الوصول إلى البيانات
+                            الخاصة بالحجاج، مثل تصاريح الحج، والإسكان، والتنقل.</p>
+                    </div>
+                    <div class="paragraph-box">
+                        <h3 class="arabic-text">4. التقنيات الحديثة في التنظيم</h3>
+                        <p>اعتمدت المملكة أحدث التقنيات لتنظيم موسم الحج، منها البطاقات الذكية التي تسهّل دخول الحجاج
+                            وتنقلهم بين المشاعر. كما يُستخدم الذكاء الاصطناعي لتحليل كثافة الحشود والتنبؤ بمناطق
+                            الازدحام، وتُسهم الطائرات بدون طيار في متابعة الوضع الميداني، بينما توفر التطبيقات الرقمية
+                            إرشادات لحظية للحجاج لضمان حج آمن ومنظم.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </div>
+</main>
+{% endblock %}
